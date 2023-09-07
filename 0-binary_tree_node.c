@@ -11,7 +11,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	binary_tree_t *new_node;
 
 	new_node = malloc(sizeof(binary_tree_t));
-
+	/*no need to verify whether parent == NULL*/
+	/*because this function also cater to root node creation*/
 	if (new_node == NULL)
 	{
 		return (NULL);
